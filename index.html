@@ -10,59 +10,73 @@
     <header class="header">
         <!-- identité du CV -->
         <div class="identity">
-            <div class="identity__photo">Photo de profil</div>
-            <div class="identity__name">Nom de contact</div>
-            <div class="identity__firstName">Prénom de contact</div>
-            <div class="identity__workTargeted">Initulé du poste visé</div>
+            <!-- Photo de profil du candidat - le fichier source est situé dans le dossiers './assets/images' -->
+            <img class="identity__photo"
+                src="./assets/images/Identité femme - anonyme.png" 
+                alt="Photo d'identité"
+                title="Photo d'identité de la femme anonyme">
+            <!-- Nom et prénom de contact du candidat -->
+            <h1 class="identity__name">Jane Doe</h1>
+            <!-- Intitulé du poste visé -->
+            <h2 class="identity__workTargeted">Développeuse web junior</h2>
         </div>
         <!-- Contact du CV -->
         <div class="contact">
-            <div class="contact__address">adresse du contact</div>
-            <div class="contact__email">email du contact</div>
-            <div class="contact__phone">numéro de téléphone du contact</div>
+            <address class="contact__address">
+                <p>12 rue des Oliviers</p>
+                <p>53200 La Roche-Neuville</p>
+            </address>
+            <div class="contact__email">
+                <p>jane.doe@gmail.com</p>
+            </div>
+            <div class="contact__phone">
+                <p>0606060606</p>
+            </div>
         </div>    
     </header>
     <main class="main">
-        <!-- div des généralités -->
-        <div class="generalness">
-            <div class="generalness__about">
-                <h1>A propos</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Accusamus dolorem asperiores quisquam officiis error ratione perferendis! Corrupti minima non omnis?</p>
+        <!-- contenu du CV -->
+        <div class="CV-description">
+            <!-- description des généralités -->
+            <div class="generalness">
+                <div class="generalness__about">
+                    <h2>A propos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Accusamus dolorem asperiores quisquam officiis error ratione perferendis! Corrupti minima non omnis?</p>
+                    </div>
+                <div class="generalness__languages">
+                    <h2>Langues parlées</h2>
+                    <ul>
+                        <li>Français - langue maternelle</li>
+                        <li>Anglais - Intermédiaire</li>
+                        <li>Espagnol - Débutant</li>
+                    </ul>
                 </div>
-            <div class="generalness__languages">
-                <h1>Langues parlées</h1>
-                <ul>
-                    <li>Français - langue maternelle</li>
-                    <li>Anglais - Intermédiaire</li>
-                    <li>Espagnol - Débutant</li>
-                </ul>
+                <div class="generalness__hobby">
+                    <h2>Centres d'intérêt</h2>
+                    <ul>
+                        <li>Chant</li>
+                        <li>Fitness</li>
+                        <li>Randonnée</li>
+                        <li>Voyages</li>
+                    </ul>
+                </div>
             </div>
-            <div class="generalness__hobby">
-                <h1>Centres d'intérêt</h1>
-                <ul>
-                    <li>Chant</li>
-                    <li>Fitness</li>
-                    <li>Randonnée</li>
-                    <li>Voyages</li>
-                </ul>
-            </div>
-        </div>
-        <!-- div professionnelle -->
-        <div class="professonal">
+            <!-- description des activités professionnelles -->
+            <div class="professonal">
             <div class="professionnal__experiences">
-                <h1>Expériences professionnelles</h1>
+                <h2>Expériences professionnelles</h2>
                 <div class="professionnal__job-description">
-                    <h2>Intitulé du poste chez Nom de l'enreprise</h2>
-                    <h3>Du XXX au XXX</h3>
+                    <h3>Intitulé du poste chez Nom de l'entreprise</h3>
+                    <h4>Du XXX au XXX</h4>
                     <ul>
                         <li>Mission 1.</li>
                         <li>Mission 2.</li>
                     </ul>       
                 </div>
                 <div class="professionnal__job-description">
-                    <h2>Intitulé du poste chez Nom de l'enreprise</h2>
-                    <h3>Du XXX au XXX</h3>
+                    <h3>Intitulé du poste chez Nom de l'entreprise</h3>
+                    <h4>Du XXX au XXX</h4>
                     <ul>
                         <li>Mission 1.</li>
                         <li>Mission 2.</li>
@@ -71,8 +85,8 @@
                     </ul>       
                 </div>
                 <div class="professionnal__job-description">
-                    <h2>Intitulé du poste chez Nom de l'enreprise</h2>
-                    <h3>Du XXX au XXX</h3>
+                    <h3>Intitulé du poste chez Nom de l'entreprise</h3>
+                    <h4>Du XXX au XXX</h4>
                     <ul>
                         <li>Mission 1.</li>
                         <li>Mission 2.</li>
@@ -81,39 +95,40 @@
                 </div>
             </div>
             <div class="professionnal__degree">
-                <h1>Diplômes/Formations</h1>
+                <h2>Diplômes/Formations</h2>
                 <div class="professionnal__degree--school">
-                    <h2>Diplôme/Formation N°1</h2>
-                    <h3>Du XXX au XXX</h3>
+                    <h3>Diplôme/Formation N°1</h3>
+                    <h4>Du XXX au XXX</h4>
                     <p>Nom de l'école</p>
                 </div>
                 <div class="professionnal__degree--school">
-                    <h2>Diplôme/Formation N°2</h2>
-                    <h3>Du XXX au XXX</h3>
+                    <h3>Diplôme/Formation N°2</h3>
+                    <h4>Du XXX au XXX</h4>
                     <p>Nom de l'école</p>
                 </div>
             </div>
             <div class="professionnal__skills">
-                <h1>Compétences</h1>
+                <h2>Compétences</h2>
                 <ul>
                     <li>HTML 5 - Expert</li>
                     <li>CSS 3 - Intermédiaire</li>
                     <li>GitHub - Débutant</li>
                 </ul>
             </div>
-        </div>    
-    </main>
-    <footer class="footer">
+            </div>    
+        </div>
         <!-- liens du réseau professionnel -->
-        <div class="professionnal__network">
+        <div class="CV-network">
             <ul>
                 <li>LinkedIn</li>
                 <li>Twitter</li>
                 <li>GitHub</li>
             </ul>
         </div>
+    </main>
+    <footer class="footer">
         <!-- Copyright et mise à jour -->
-        <div class="copyright">Mise à jour le XX mois Année</div>
+        <p class="copyright">Mise à jour le XX mois Année</p>
     </footer>
 </body>
 </html>
