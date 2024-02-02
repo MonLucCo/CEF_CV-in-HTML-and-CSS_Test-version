@@ -7,103 +7,113 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <photo>Photo de profil</photo>
-        <name>Nom de contact</name>
-        <firstName>Prénom de contact</firstName>
-        <workTargeted>Initulé du poste visé</workTargeted>
+    <header class="header">
+        <!-- identité du CV -->
+        <div class="identity">
+            <div class="identity__photo">Photo de profil</div>
+            <div class="identity__name">Nom de contact</div>
+            <div class="identity__firstName">Prénom de contact</div>
+            <div class="identity__workTargeted">Initulé du poste visé</div>
+        </div>
+        <!-- Contact du CV -->
+        <div class="contact">
+            <div class="contact__address">adresse du contact</div>
+            <div class="contact__email">email du contact</div>
+            <div class="contact__phone">numéro de téléphone du contact</div>
+        </div>    
     </header>
-    <contact-section>
-        <address>adresse du contact</address>
-        <email>email du contact</email>
-        <phone>numéro de téléphone du contact</phone>
-    </contact-section>
-    <generalness-section>
-        <about>
-            <h1>A propos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Accusamus dolorem asperiores quisquam officiis error ratione perferendis! Corrupti minima non omnis?</p>
-        </about>
-        <languages>
-            <h1>Langues parlées</h1>
-            <ul>
-                <li>Français - langue maternelle</li>
-                <li>Anglais - Intermédiaire</li>
-                <li>Espagnol - Débutant</li>
-            </ul>
-        </languages>
-        <hobby>
-            <h1>Centres d'intérêt</h1>
-            <ul>
-                <li>Chant</li>
-                <li>Fitness</li>
-                <li>Randonnée</li>
-                <li>Voyages</li>
-            </ul>
-        </hobby>
-    </generalness-section>
-    <professonal-section>
-        <experiences>
-            <h1>Expériences professionnelles</h1>
-            <job-description>
-                <h2>Intitulé du poste chez Nom de l'enreprise</h2>
-                <h3>Du XXX au XXX</h3>
+    <main class="main">
+        <!-- div des généralités -->
+        <div class="generalness">
+            <div class="generalness__about">
+                <h1>A propos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Accusamus dolorem asperiores quisquam officiis error ratione perferendis! Corrupti minima non omnis?</p>
+                </div>
+            <div class="generalness__languages">
+                <h1>Langues parlées</h1>
                 <ul>
-                    <li>Mission 1.</li>
-                    <li>Mission 2.</li>
-                </ul>       
-            </job-description>
-            <job-description>
-                <h2>Intitulé du poste chez Nom de l'enreprise</h2>
-                <h3>Du XXX au XXX</h3>
+                    <li>Français - langue maternelle</li>
+                    <li>Anglais - Intermédiaire</li>
+                    <li>Espagnol - Débutant</li>
+                </ul>
+            </div>
+            <div class="generalness__hobby">
+                <h1>Centres d'intérêt</h1>
                 <ul>
-                    <li>Mission 1.</li>
-                    <li>Mission 2.</li>
-                    <li>Mission 3.</li>
-                    <li>Mission 4.</li>
-                </ul>       
-            </job-description>
-            <job-description>
-                <h2>Intitulé du poste chez Nom de l'enreprise</h2>
-                <h3>Du XXX au XXX</h3>
+                    <li>Chant</li>
+                    <li>Fitness</li>
+                    <li>Randonnée</li>
+                    <li>Voyages</li>
+                </ul>
+            </div>
+        </div>
+        <!-- div professionnelle -->
+        <div class="professonal">
+            <div class="professionnal__experiences">
+                <h1>Expériences professionnelles</h1>
+                <div class="professionnal__job-description">
+                    <h2>Intitulé du poste chez Nom de l'enreprise</h2>
+                    <h3>Du XXX au XXX</h3>
+                    <ul>
+                        <li>Mission 1.</li>
+                        <li>Mission 2.</li>
+                    </ul>       
+                </div>
+                <div class="professionnal__job-description">
+                    <h2>Intitulé du poste chez Nom de l'enreprise</h2>
+                    <h3>Du XXX au XXX</h3>
+                    <ul>
+                        <li>Mission 1.</li>
+                        <li>Mission 2.</li>
+                        <li>Mission 3.</li>
+                        <li>Mission 4.</li>
+                    </ul>       
+                </div>
+                <div class="professionnal__job-description">
+                    <h2>Intitulé du poste chez Nom de l'enreprise</h2>
+                    <h3>Du XXX au XXX</h3>
+                    <ul>
+                        <li>Mission 1.</li>
+                        <li>Mission 2.</li>
+                        <li>Mission 3.</li>
+                    </ul>       
+                </div>
+            </div>
+            <div class="professionnal__degree">
+                <h1>Diplômes/Formations</h1>
+                <div class="professionnal__degree--school">
+                    <h2>Diplôme/Formation N°1</h2>
+                    <h3>Du XXX au XXX</h3>
+                    <p>Nom de l'école</p>
+                </div>
+                <div class="professionnal__degree--school">
+                    <h2>Diplôme/Formation N°2</h2>
+                    <h3>Du XXX au XXX</h3>
+                    <p>Nom de l'école</p>
+                </div>
+            </div>
+            <div class="professionnal__skills">
+                <h1>Compétences</h1>
                 <ul>
-                    <li>Mission 1.</li>
-                    <li>Mission 2.</li>
-                    <li>Mission 3.</li>
-                </ul>       
-            </job-description>
-        </experiences>
-        <degree>
-            <h1>Diplômes/Formations</h1>
-            <school>
-                <h2>Diplôme/Formation N°1</h2>
-                <h3>Du XXX au XXX</h3>
-                <p>Nom de l'école</p>
-            </school>
-            <school>
-                <h2>Diplôme/Formation N°2</h2>
-                <h3>Du XXX au XXX</h3>
-                <p>Nom de l'école</p>
-            </school>
-        </degree>
-        <skills>
-            <h1>Compétences</h1>
-            <ul>
-                <li>HTML 5 - Expert</li>
-                <li>CSS 3 - Intermédiaire</li>
-                <li>GitHub - Débutant</li>
-            </ul>
-        </skills>
-    </professonal-section>
-    <footer>
-        <network>
+                    <li>HTML 5 - Expert</li>
+                    <li>CSS 3 - Intermédiaire</li>
+                    <li>GitHub - Débutant</li>
+                </ul>
+            </div>
+        </div>    
+    </main>
+    <footer class="footer">
+        <!-- liens du réseau professionnel -->
+        <div class="professionnal__network">
             <ul>
                 <li>LinkedIn</li>
                 <li>Twitter</li>
                 <li>GitHub</li>
             </ul>
-        </network>
-        <copyright>Mise à jour le XX mois Année</copyright>
+        </div>
+        <!-- Copyright et mise à jour -->
+        <div class="copyright">Mise à jour le XX mois Année</div>
     </footer>
 </body>
 </html>
