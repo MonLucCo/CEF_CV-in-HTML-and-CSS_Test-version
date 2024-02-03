@@ -1,20 +1,18 @@
 /* Remplir les styles CSS du projet */
 
 /* Import via Google font de la police 'Lato' (police sans empattement) à partir du site de Google Fonts. */
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-</style>
-
-* {
-    font-family: 'Lato', sans-serif; 
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 /* Import via '@font-face' de la police 'Raleway' (police sans empattement) à partir du site de Google Fonts*/
 @font-face {
     font-family: "Raleway";
-    src: url('../fonts/Raleway-VariableFont.woff');
+    src: url('../fonts/Raleway-VariableFont.woff') format('woff');
     src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype'),
         url('../fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif; 
 }
 
 p {
