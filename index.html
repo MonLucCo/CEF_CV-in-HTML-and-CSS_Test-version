@@ -11,10 +11,11 @@
         <!-- identité du CV -->
         <div class="identity">
             <!-- Photo de profil du candidat - le fichier source est situé dans le dossiers './assets/images' -->
-            <img class="identity__photo" 
-                src="./assets/images/identité-femme-anonyme.png" 
-                alt="Photo d'identité" 
-                title="Photo d'identité de la femme anonyme">
+            <figure class="identity__photo">
+                 <img src="./assets/images/identité-femme-anonyme.png" 
+                    alt="Photo d'identité" 
+                    title="Photo d'identité de la femme anonyme">
+            </figure>
             <!-- Nom et prénom de contact du candidat -->
             <h1 class="identity__name">Jane Doe</h1>
             <!-- Intitulé du poste visé -->
@@ -63,8 +64,8 @@
                 </div>
             </div>
             <!-- description des activités professionnelles -->
-            <div class="professonal">
-                <div class="professionnal__experiences">
+            <div class="professional">
+                <div class="professional__experiences">
                     <h2>Expériences professionnelles</h2>
                     <div class="professionnal__job-description">
                         <h3>Intitulé du poste chez Nom de l'entreprise</h3>
@@ -94,7 +95,7 @@
                         </ul>       
                     </div>
                 </div>
-                <div class="professionnal__degree">
+                <div class="professional__degree">
                     <h2>Diplômes/Formations</h2>
                     <div class="professionnal__degree--school">
                         <h3>Diplôme/Formation N°1</h3>
@@ -107,7 +108,7 @@
                         <p>Nom de l'école</p>
                     </div>
                 </div>
-                <div class="professionnal__skills">
+                <div class="professional__skills">
                     <h2>Compétences</h2>
                     <ul>
                         <li><p>HTML 5 - Expert</p></li>
@@ -119,16 +120,16 @@
         </div>
         <!-- liens du réseau professionnel -->
         <div class="CV-network">
-            <ul>
-                <li><p>LinkedIn</p></li>
-                <li><p>Twitter</p></li>
-                <li><p>GitHub</p></li>
-            </ul>
+            <p>LinkedIn</p>
+            <p>Twitter</p>
+            <p>GitHub</p>
         </div>
     </main>
     <footer class="footer">
         <!-- Copyright et mise à jour -->
-        <p class="copyright">Mise à jour le XX mois Année</p>
+        <div class="copyright">
+            <p>Dernière mise à jour le XX mois Année</p>
+        </div>
     </footer>
 </body>
 </html>

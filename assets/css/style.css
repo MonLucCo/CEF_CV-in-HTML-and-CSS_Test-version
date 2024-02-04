@@ -20,3 +20,87 @@ h1, h2, h3 {
 p, a {
     font-family: "Raleway", sans-serif;
 }
+
+/* Disposition des conteneurs en utilisant la technologie 'flexbox' */
+
+/* disposition du bandeau 'identity' en colonne, centré verticalement et horizontalement */
+.identity {
+    background-color: #782221;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* dimension de la photo d'identité */
+.identity__photo {
+    width: 150px;
+    height: 150px;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Texte du nom de l'identité en lettres capitales */
+.identity__name {
+    text-transform: uppercase;
+}
+
+/* disposition du bandeau 'contact' en ligne */
+.contact {
+    background-color: #2c1d27;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* disposition du bandeau 'CV-description' en ligne */
+.CV-description {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+/* conteneur 'generalness */
+.generalness {
+    background-color: #782221;
+    color: white;
+}
+
+/* gestion des titres du conteneur 'generalness' */
+.generalness h2 {
+   background-color: #dbc2a4;
+   color: black;
+}
+
+/* */
+.professional h2 {
+    background-color: #dbc2a4;
+    color: black;
+}
+
+/* disposition du bandeau 'CV-network' en ligne */
+.CV-network {
+    background-color: #782221;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* disposition du bandeau 'copyright' */
+.copyright {
+    background-color: #782221;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
