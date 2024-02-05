@@ -29,7 +29,7 @@ p, a {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -56,35 +56,60 @@ img {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 3em 0 3em;
 }
 
 /* disposition du bandeau 'CV-description' en ligne */
 .CV-description {
     display: flex;
-    flex: 2;
     flex-direction: row;
     justify-content: space-between;
-    gap: 1em;
+    gap: 2em;
 }
 
 /* conteneur 'generalness */
 .generalness {
     background-color: #782221;
     color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2em;
+    padding-right: 3em;
 }
 
 /* gestion des titres du conteneur 'generalness' */
 .generalness h2 {
    background-color: #dbc2a4;
    color: black;
+   padding-inline-start: 1em;
 }
 
-/* */
+/* gestion du paragraphe du conteneur 'generalness__about' */
+.generalness__about p {
+    padding-inline-start: 1.5em;
+    text-indent: 3em; 
+    text-align: justify;
+    padding-inline-end: 1em;
+}
+
+/* conteneur 'professional' */
+.professional {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 2em;
+    padding-right: 1em;
+}
+
+/* gestion des titres du conteneur 'professional' */
 .professional h2 {
     background-color: #dbc2a4;
     color: black;
+    border-left: 0.3em solid #782221;
+    padding-inline-start: 0.3em;
 }
 
 /* disposition du bandeau 'CV-network' en ligne */
@@ -104,3 +129,27 @@ img {
     justify-content: center;
     justify-items: center;
 }
+
+/* début : dimensionnement de la page et de ses conteneurs */
+html {
+    box-sizing: border-box;
+}
+
+/* *,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
+
+body {
+    width: 1160px;
+    margin: auto;
+    border-right: 3px solid #2c1d27;
+}
+/* fin : dimensionnement de la page et de ses conteneurs */
+
+/* début : retrait des marges inutiles */
+p {
+    margin: 0;
+}
+/* début : retrait des marges inutiles */
