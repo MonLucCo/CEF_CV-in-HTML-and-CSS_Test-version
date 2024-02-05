@@ -38,7 +38,7 @@ p, a {
     width: 150px;
     height: 150px;
 }
-img {
+.identity__photo img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -59,6 +59,12 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 1.5em 3em 1.5em 3em;
+}
+
+/* gestion du style des liens dynamiques de 'contact' */
+.contact a {
+    text-decoration: none;
+    color: white;
 }
 
 /* disposition du bandeau 'CV-description' en ligne */
