@@ -130,8 +130,8 @@ p, a {
 
 /* début : disposition des icônes des liens pro */
 .CV-network__icone {
-    width: 50px;
-    height: 50px;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 .CV-network__icone img {
