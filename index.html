@@ -25,9 +25,7 @@
         <div class="contact">
             <address class="contact__address">
                 <!-- lien vers l'adresse dans Google Maps - Ouverture d'une nouvelle page -->
-                <a href="https://www.google.com/maps/place/12+Rue+des+Oliviers,+53200+La+Roche-Neuville/
-                            @47.8746148,-0.7546056,17z/data=!3m1!4b1!4m6!3m5!1s0x4808f12c7939a8a7:0xaefceff0de598651!8m2!3d47.8746112!
-                            4d-0.7520307!16s%2Fg%2F11c1fvm555?entry=ttu"
+                <a href="https://www.google.com/maps/place/12+Rue+des+Oliviers,+53200+La+Roche-Neuville/@47.8746148,-0.7546056,17z/data=!3m1!4b1!4m6!3m5!1s0x4808f12c7939a8a7:0xaefceff0de598651!8m2!3d47.8746112!4d-0.7520307!16s%2Fg%2F11c1fvm555?entry=ttu"
                     target="_blank">
                     <p>12 rue des Oliviers</p>
                     <p>53200 La Roche-Neuville</p>
@@ -39,7 +37,7 @@
             </div>
             <div class="contact__phone">
                 <!-- lien avec le numéro de téléphone -->
-                <a href="tel: 0606060606">0606060606</a>           
+                <a href="tel:+0606060606">0606060606</a>           
             </div>
         </div>    
     </header>
@@ -128,15 +126,63 @@
         </div>
         <!-- liens du réseau professionnel -->
         <div class="CV-network">
-            <p>LinkedIn</p>
-            <p>Twitter</p>
-            <p>GitHub</p>
+            <p class="CV-network__icone">
+                <!-- lien à préciser avec une URL de LinkedIn active -->
+                <a href="https://www.linkedin.com/login/fr"
+                    target="_blank">
+                    <img src="./assets/images/linkedin.png" alt="Accès à la page de connexion de Linkedin">
+                </a>
+            </p>
+            <p class="CV-network__icone">
+                <!-- lien à préciser avec une URL de Twitter active -->
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZnIifQ%3D%3D%22%7D"
+                    target="_blank">
+                    <img src="./assets/images/twitter.png" alt="Accès à la page de connexion de Twitter">
+                </a>
+            </p>
+            <p class="CV-network__icone">
+                <!-- lien à préciser avec une URL de GitHub active -->
+                <a href="https://github.com/seconnecter"
+                    target="_blank">
+                    <img src="./assets/images/signe-github_inverse.png" alt="Accès au GitHub de 'seconnecter'">
+                </a>
+            </p>
         </div>
     </main>
     <footer class="footer">
         <!-- Copyright et mise à jour -->
         <div class="copyright">
-            <p>Dernière mise à jour le XX mois Année</p>
+            <div class="copyright__validator">
+                <!-- insérer les logos des validateurs lorsque la validation a été effectuée avec succès -->
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                            alt="CSS Valide !">
+                    </a>
+                </p>
+            </div>
+            <div class="copyright__update">
+                <p>Dernière mise à jour le XX mois Année</p>
+            </div>
+            <div class="copyright__icones">
+                <!-- insérer les droits à l'image associés aux téléchargement des icônes -->
+                <p>
+                    <a href="https://www.flaticon.com/fr/icones-gratuites/linkedin"
+                        target="_blank"
+                        title="linkedin icônes">Linkedin icônes créées par riajulislam - Flaticon</a> 
+                </p>
+                <p>
+                    <a href="https://www.flaticon.com/fr/icones-gratuites/twitter"
+                        target="_blank"
+                        title="twitter icônes">Twitter icônes créées par Fathema Khanom - Flaticon</a>
+                </p>
+                <p>
+                    <a href="https://www.flaticon.com/fr/icones-gratuites/github"
+                        target="_blank"
+                        title="github icônes">Github icônes créées par Dave Gandy - Flaticon</a>
+                </p>
+            </div>
         </div>
     </footer>
 </body>

@@ -128,15 +128,51 @@ p, a {
     padding: 1em 0 0.5em 0;
 }
 
+/* début : disposition des icônes des liens pro */
+.CV-network__icone {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.CV-network__icone img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* fin : disposition des icônes des liens pro*/
+
 /* disposition du bandeau 'copyright' */
 .copyright {
     background-color: #782221;
     color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     justify-items: center;
     padding: 1em 0 1em 0;
 }
+
+/* début : gestion des logos des validateurs */
+.copyright__validator {
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* fin : gestion des logos des validateurs */
+
+/* début : gestion des droits à l'images (graphiste) des icônes téléchargées gratuitement */
+.copyright__icones {
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.copyright__icones a {
+    color: black;
+}
+/* fin : gestion des droits à l'images (graphiste) des icônes téléchargées gratuitement */
 
 /* début : dimensionnement de la page et de ses conteneurs */
 html {
