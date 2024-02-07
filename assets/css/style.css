@@ -37,12 +37,14 @@ p, a {
 .identity__photo {
     width: 150px;
     height: 150px;
+    padding-top: 1em;
 }
 .identity__photo img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0 0 0.6em 0.3em #dbc2a4;
 }
 
 /* Texte du nom de l'identité en lettres capitales */
@@ -186,6 +188,7 @@ html {
 } */
 
 body {
+    box-sizing: inherit;
     width: 1160px;
     margin: auto;
     border-right: 3px solid #2c1d27;
