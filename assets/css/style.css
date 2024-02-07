@@ -33,7 +33,7 @@ p, a {
     padding: 1em 0 1em 0;
 }
 
-/* dimension de la photo d'identité */
+/* début : dimension de la photo d'identité */
 .identity__photo {
     width: 150px;
     height: 150px;
@@ -46,6 +46,13 @@ p, a {
     border-radius: 50%;
     box-shadow: 0 0 0.6em 0.3em #dbc2a4;
 }
+/* fin : dimension de la photo d'identité */
+
+/* début : gestion dynamique du cursor (zoom+) au survol de la photo de profil - effet dynamique n°2 */
+.identity__photo img:hover {
+    cursor: zoom-in;
+}
+/* fin : gestion dynamique du cursor (zoom+) au survol de la photo de profil - effet dynamique n°2 */
 
 /* Texte du nom de l'identité en lettres capitales */
 .identity__name {
@@ -68,6 +75,12 @@ p, a {
     text-decoration: none;
     color: white;
 }
+
+/* début : gestion dynamique au survol des liens de contact - effet dynamique n°4 */
+.contact a:hover {
+    text-decoration: underline;
+}
+/* fin : gestion dynamique au survol des liens de contact - effet dynamique n°4 */
 
 /* disposition du bandeau 'CV-description' en ligne */
 .CV-description {
@@ -120,6 +133,18 @@ p, a {
     padding: 0.1em 0.3em 0.1em 0.3em;
 }
 
+/* début : gestion dynamique au survol d'une expérience professionnelle - effet dynamique n°1 */
+.professional__job-description:hover {
+    border-right: 0.3em solid #782221;
+}
+.professional__degree--school:hover {
+    border-right: 0.3em solid #782221;
+}
+.professional__skills--description:hover {
+    border-right: 0.3em solid #782221;
+}
+/* fin : gestion dynamique au survol d'une expérience professionnelle - effet dynamique n°1 */
+
 /* disposition du bandeau 'CV-network' en ligne */
 .CV-network {
     background-color: #782221;
@@ -135,13 +160,18 @@ p, a {
     width: 2.5em;
     height: 2.5em;
 }
-
 .CV-network__icone img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 /* fin : disposition des icônes des liens pro*/
+
+/* début : gestion dynamique au survol d'une icône d'un réseau social - effet dynamique n°3 */
+.CV-network__icone img:hover {
+    opacity: 60%;
+}
+/* fin : gestion dynamique au survol d'une icône d'un réseau social - effet dynamique n°3 */
 
 /* disposition du bandeau 'copyright' */
 .copyright {
@@ -170,7 +200,6 @@ p, a {
     flex-direction: column;
     text-align: right;
 }
-
 .copyright__icones a {
     color: black;
 }
