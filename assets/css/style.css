@@ -179,7 +179,8 @@ p, a {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    /* justify-content: space-between; */ /* liaison avec les classes '.copyright__validator' et '.copyright__icones' */
     justify-items: center;
     padding: 1em 0 1em 0;
 }
@@ -190,6 +191,7 @@ p, a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    display: none;          /* retrait du flux de la page, car non demandé - actualiser le 'justify-content' de '.copyright' */
 }
 /* fin : gestion des logos des validateurs */
 
@@ -199,6 +201,7 @@ p, a {
     display: flex;
     flex-direction: column;
     text-align: right;
+    display: none;          /* retrait du flux de la page, car non demandé - actualiser le 'justify-content' de '.copyright' */
 }
 .copyright__icones a {
     color: black;
