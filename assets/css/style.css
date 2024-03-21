@@ -209,9 +209,9 @@ p, a {
 /* fin : gestion des droits à l'images (graphiste) des icônes téléchargées gratuitement */
 
 /* début : dimensionnement de la page et de ses conteneurs */
-html {
+/* html {
     box-sizing: border-box;
-}
+} */
 
 /* *,
 *::before,
@@ -219,8 +219,10 @@ html {
     box-sizing: inherit;
 } */
 
-body {
-    box-sizing: inherit;
+/* body */
+header, main, footer {
+    /* box-sizing: inherit; */
+    box-sizing: border-box;
     width: 1160px;
     margin: auto;
     border-right: 3px solid #2c1d27;
